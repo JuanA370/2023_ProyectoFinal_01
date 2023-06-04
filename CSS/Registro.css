@@ -1,0 +1,120 @@
+body {
+	background-image: url(../Imagenes/fondo\ de\ cine.jpg);
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.formulario {
+	display: grid;
+	gap: 10px;
+	max-width: 400px;
+	margin: 20px auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.893);
+}
+
+.formulario .campo {
+	color: white;
+}
+
+h2 {
+	text-align: center;
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	font-size: 40px;
+	color: red;
+}
+
+.campo {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+}
+
+label {
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+.checkbox {
+	grid-template-columns: auto 1fr;
+	align-items: start;
+}
+
+button[type="submit"] {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: #333;
+	color: #fff;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+	background-color: #555;
+}
+.enlace-olvidado {
+    text-align: left;
+    margin-top: 40px;
+}
+
+.enlace-olvidado a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.enlace-olvidado a:hover {
+    text-decoration: underline;
+}
+
+.enlace-olvidado .derecha{
+    text-align: right;
+    padding-left: 190px;
+}
+@media (max-width: 768px) {
+	.formulario {
+	  max-width: 90%;
+	}
+  
+	h2 {
+	  font-size: 30px;
+	}
+	
+	.campo {
+	  grid-template-columns: 1fr;
+	}
+  
+	.enlace-olvidado .derecha {
+	  text-align: center;
+	  padding-left: 0;
+	  margin-top: 20px;
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.formulario {
+	  padding: 10px;
+	}
+  
+	h2 {
+	  font-size: 24px;
+	}
+  
+	button[type="submit"] {
+	  padding: 8px 16px;
+	  font-size: 14px;
+	}
+  }
