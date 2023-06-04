@@ -1,0 +1,254 @@
+.pelicula-trailer {
+  display: flex;
+  align-items: flex-start;
+}
+
+.portada {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.portada img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.informacion {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.informacion p {
+  text-align: left;
+}
+
+.titulo {
+  color: #E50914;
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+}
+
+.descripcion {
+  color: #FFF;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.trailer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.trailer iframe {
+  width: 854px;
+  height: 480px;
+  border-radius: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #141414;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: normal;
+  color: #E50914;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+#searchForm {
+  margin-bottom: 20px;
+}
+
+main {
+  background-image: url(../Imagenes/fondo\ de\ cine\ 3.jpg);
+}
+
+#searchInput {
+  padding: 5px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+#movieList {
+  text-align: center;
+}
+
+:root {
+  --rojo: #E50914;
+  --fondo: #141414;
+}
+
+.contenedor {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  padding: 30px 0;
+}
+
+header .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logotipo {
+  font-family: 'Bebas Neue', cursive;
+  font-weight: normal;
+  color: var(--rojo);
+  font-size: 40px;
+}
+
+.trailer p {
+  color: white;
+}
+
+header nav a {
+  color: #AAA;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+  color: #FFF;
+}
+
+#searchForm {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#searchInput {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#searchForm button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.trailer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.trailer {
+  width: 200px;
+  text-align: center;
+}
+
+.trailer a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.trailer img {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.trailer p {
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .contenedor {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+footer p {
+  color: #888;
+  font-size: 14px;
+}
+
+nav img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.contenedor p {
+  color: white;
+}
+@media (min-width: 768px) {
+  .pelicula-trailer {
+    flex-wrap: nowrap;
+  }
+
+  .portada {
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-right: 40px;
+  }
+
+  .informacion {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+
+  .trailer iframe {
+    width: 100%;
+    height: 360px;
+  }
+
+  .trailer-row {
+    justify-content: flex-start;
+  }
+
+  .trailer {
+    width: auto;
+  }
+}
+@media (max-width: 480px) {
+  .pelicula-trailer {
+    flex-direction: column;
+  }
+
+  .portada {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .informacion {
+    margin-bottom: 20px;
+  }
+
+  .trailer iframe {
+    width: 100%;
+    height: 240px;
+  }
+}
