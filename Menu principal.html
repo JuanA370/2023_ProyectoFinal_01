@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="CSS/Menu Principal CSS.css">
+    <script src="JavaScript/Botones.js"></script>
+    <title>Inicio</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <a href="Menu principal.html" class="activo">
+            <h2 class="logotipo">CineTrail</h2></a>
+            <p>¡Donde tus películas descansan entre aventuras!</p>
+            <nav>
+                <a href="Trailers.html"><img src="Imagenes/trailers.png" alt="Pelis"></a>
+            </nav>
+        </div>
+        <div class="botones">
+            <button onclick="cambiarContenidoAnterior()"><img src="Imagenes/Flecha iz.png"
+                    alt="Boton izquierdo"></button>
+            <button onclick="cambiarContenidoDelante()"><img src="Imagenes/Flecha dr.png" alt="Boton derecho"></button>
+        </div>
+    </header>
+    <main>
+        <div id="contenidoPrincipal">
+            <div id="fondo1" class="pelicula-principal">
+                <div class="contenedor">
+                    <h3 class="titulo">Avengers: Endgame</h3>
+                    <p class="descripcion">
+                        Después de los eventos devastadores de "Avengers: Infinity War", el universo está en ruinas
+                        debido a
+                        las acciones de Thanos, el Titán Loco. Con la ayuda de los aliados que quedaron, los Vengadores
+                        deberán reunirse una vez más para intentar detenerlo y restaurar el orden en el universo de una
+                        vez
+                        por todas.
+                    </p>
+                    <a href="https://es.wikipedia.org/wiki/Avengers:_Endgame">
+                        <button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+                    </a>
+                </div>
+            </div>
+
+            <div id="fondo2" class="pelicula-principal">
+                <div class="contenedor">
+                    <h3 class="titulo">Harry Potter y la piedra filosofal</h3>
+                    <p class="descripcion">
+                        En la película "Harry Potter y la piedra filosofal", basada en el primer libro de la serie,
+                        seguimos la
+                        historia de Harry Potter, un niño huérfano que descubre que es un mago y es invitado a la
+                        Escuela de Magia
+                        y Hechicería de Hogwarts. Allí, Harry se hace amigo de Ron Weasley y Hermione Granger, y juntos
+                        descubren
+                        que alguien está tratando de robar la Piedra Filosofal, un objeto mágico que otorga la
+                        inmortalidad y la
+                        riqueza infinita. Con la ayuda de sus amigos y de sus habilidades mágicas, Harry se enfrenta a
+                        diversos
+                        desafíos, incluyendo un enfrentamiento final con el malvado Lord Voldemort, para proteger la
+                        Piedra Filosofal
+                        y salvar a Hogwarts de la oscuridad.
+                    </p>
+                    <a href="https://es.wikipedia.org/wiki/Harry_Potter_y_la_piedra_filosofal_(película)">
+                        <button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+                    </a>
+                </div>
+            </div>
+
+            <div id="fondo3" class="pelicula-principal">
+                <div class="contenedor">
+                    <h3 class="titulo">Fast & Furious</h3>
+                    <p class="descripcion">
+                        “¿Puedes hacer menos ruido, Vin? Vas a despertar al público”. Así se mofaba Peter Bradshaw, de
+                        The
+                        Guardian, de A todo gas (2001). La suya no fue la única crítica negativa que recibió la
+                        producción
+                        de bajo presupuesto dirigida por Rob Cohen, aunque también tuvo sus defensores. Variety la
+                        consideró
+                        “una película de autocine”, mientras que Empire aseguró que era “lo más divertido del año”. Lo
+                        que
+                        nadie imaginó fue que aquella apuesta que había costado 40 millones de dólares sería el germen
+                        de
+                        una saga multimillonaria.
+
+                        22 años después, Fast & Furious X debe volver a elevar la apuesta con la presión añadida de ser
+                        la
+                        penúltima película de la franquicia. Recordemos que Vin Diesel había concebido Fast & Furious 9
+                        como
+                        la primera entrega de una trilogía que pondría fin a la longeva saga, con Justin Lin en la silla
+                        del
+                        director.
+                    </p>
+                    <a href="https://es.wikipedia.org/wiki/Avengers:_Endgame">
+                        <button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contenedor">
+            <p>&copy; 2023 CineTrail. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
